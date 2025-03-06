@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Armas</title>
+        <meta charset='utf-8'/>
+        <style>
+ .ͼ1.cm-focused {outline: 1px dotted #212121;}
+.ͼ1 {position: relative !important; box-sizing: border-box; display: flex !important; flex-direction: column;}
+.ͼ1 .cm-scroller {display: flex !important; align-items: flex-start !important; font-family: monospace; line-height: 1.4; height: 100%; overflow-x: auto; position: relative; z-index: 0; overflow-anchor: none;}
+.ͼ1 .cm-content[contenteditable=true] {-webkit-user-modify: read-write-plaintext-only;}
+.ͼ1 .cm-content {margin: 0; flex-grow: 2; flex-shrink: 0; display: block; white-space: pre; word-wrap: normal; box-sizing: border-box; min-height: 100%; padding: 4px 0; outline: none;}
+.ͼ1 .cm-lineWrapping {white-space: pre-wrap; white-space: break-spaces; word-break: break-word; overflow-wrap: anywhere; flex-shrink: 1;}
+.ͼ2 .cm-content {caret-color: black;}
+.ͼ3 .cm-content {caret-color: white;}
+.ͼ1 .cm-line {display: block; padding: 0 2px 0 6px;}
+.ͼ1 .cm-layer > * {position: absolute;}
+.ͼ1 .cm-layer {position: absolute; left: 0; top: 0; contain: size style;}
+.ͼ2 .cm-selectionBackground {background: #d9d9d9;}
+.ͼ3 .cm-selectionBackground {background: #222;}
+.ͼ2.cm-focused > .cm-scroller > .cm-selectionLayer .cm-selectionBackground {background: #d7d4f0;}
+.ͼ3.cm-focused > .cm-scroller > .cm-selectionLayer .cm-selectionBackground {background: #233;}
+.ͼ1 .cm-cursorLayer {pointer-events: none;}
+.ͼ1.cm-focused > .cm-scroller > .cm-cursorLayer {animation: steps(1) cm-blink 1.2s infinite;}
+@keyframes cm-blink {50% {opacity: 0;}}
+@keyframes cm-blink2 {50% {opacity: 0;}}
+.ͼ1 .cm-cursor, .ͼ1 .cm-dropCursor {border-left: 1.2px solid black; margin-left: -0.6px; pointer-events: none;}
+.ͼ1 .cm-cursor {display: none;}
+.ͼ3 .cm-cursor {border-left-color: #ddd;}
+.ͼ1 .cm-dropCursor {position: absolute;}
+.ͼ1.cm-focused > .cm-scroller > .cm-cursorLayer .cm-cursor {display: block;}
+.ͼ1 .cm-iso {unicode-bidi: isolate;}
+.ͼ1 .cm-announced {position: fixed; top: -10000px;}
+@media print {.ͼ1 .cm-announced {display: none;}}
+.ͼ2 .cm-activeLine {background-color: #cceeff44;}
+.ͼ3 .cm-activeLine {background-color: #99eeff33;}
+.ͼ2 .cm-specialChar {color: red;}
+.ͼ3 .cm-specialChar {color: #f78;}
+.ͼ1 .cm-gutters {flex-shrink: 0; display: flex; height: 100%; box-sizing: border-box; inset-inline-start: 0; z-index: 200;}
+.ͼ2 .cm-gutters {background-color: #f5f5f5; color: #6c6c6c; border-right: 1px solid #ddd;}
+.ͼ3 .cm-gutters {background-color: #333338; color: #ccc;}
+.ͼ1 .cm-gutter {display: flex !important; flex-direction: column; flex-shrink: 0; box-sizing: border-box; min-height: 100%; overflow: hidden;}
+.ͼ1 .cm-gutterElement {box-sizing: border-box;}
+.ͼ1 .cm-lineNumbers .cm-gutterElement {padding: 0 3px 0 5px; min-width: 20px; text-align: right; white-space: nowrap;}
+.ͼ2 .cm-activeLineGutter {background-color: #e2f2ff;}
+.ͼ3 .cm-activeLineGutter {background-color: #222227;}
+.ͼ1 .cm-panels {box-sizing: border-box; position: sticky; left: 0; right: 0; z-index: 300;}
+.ͼ2 .cm-panels {background-color: #f5f5f5; color: black;}
+.ͼ2 .cm-panels-top {border-bottom: 1px solid #ddd;}
+.ͼ2 .cm-panels-bottom {border-top: 1px solid #ddd;}
+.ͼ3 .cm-panels {background-color: #333338; color: white;}
+.ͼ1 .cm-tab {display: inline-block; overflow: hidden; vertical-align: bottom;}
+.ͼ1 .cm-widgetBuffer {vertical-align: text-top; height: 1em; width: 0; display: inline;}
+.ͼ1 .cm-placeholder {color: #888; display: inline-block; vertical-align: top;}
+.ͼ1 .cm-highlightSpace {background-image: radial-gradient(circle at 50% 55%, #aaa 20%, transparent 5%); background-position: center;}
+.ͼ1 .cm-highlightTab {background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="20"><path stroke="%23888" stroke-width="1" fill="none" d="M1 10H196L190 5M190 15L196 10M197 4L197 16"/></svg>'); background-size: auto 100%; background-position: right 90%; background-repeat: no-repeat;}
+.ͼ1 .cm-trailingSpace {background-color: #ff332255;}
+.ͼ1 .cm-button {vertical-align: middle; color: inherit; font-size: 70%; padding: .2em 1em; border-radius: 1px;}
+.ͼ2 .cm-button:active {background-image: linear-gradient(#b4b4b4, #d0d3d6);}
+.ͼ2 .cm-button {background-image: linear-gradient(#eff1f5, #d9d9df); border: 1px solid #888;}
+.ͼ3 .cm-button:active {background-image: linear-gradient(#111, #333);}
+.ͼ3 .cm-button {background-image: linear-gradient(#393939, #111); border: 1px solid #888;}
+.ͼ1 .cm-textfield {vertical-align: middle; color: inherit; font-size: 70%; border: 1px solid silver; padding: .2em .5em;}
+.ͼ2 .cm-textfield {background-color: white;}
+.ͼ3 .cm-textfield {border: 1px solid #555; background-color: inherit;}
+.ͼ1 .cm-foldPlaceholder {background-color: #eee; border: 1px solid #ddd; color: #888; border-radius: .2em; margin: 0 1px; padding: 0 1px; cursor: pointer;}
+.ͼ1 .cm-foldGutter span {padding: 0 1px; cursor: pointer;}
+ 
+.pandoc-plugin-error {
+    color: red;
+}
+ .theme-dark {
+	--color-base-00: #000;
+	--color-base-05: #080808;
+	--color-base-10: #111;
+	--color-base-20: #1a1a1a;
+	--color-base-25: #222;
+	--color-base-30: #333;
+	--color-base-35: #363636;
+	--color-base-40: #4a4a4a;
+	--color-base-50: #666;
+	--color-base-60: #999;
+	--color-base-70: #bbb;
+	--color-base-100: #fff;
+
+	--background-primary: var(--color-base-00);
+	--background-secondary: var(--color-base-05);
+	--titlebar-background: var(--color-base-00);
+	--titlebar-background-focused: var(--color-base-10);
+}
+
+
+/*
+	No, seriously, that's as simple as it gets.
+	  - Sakura
+*/
+undefined
+</style>
+    </head>
+    <body>
+<p dir="auto"><a href="./index.html#item" class="tag"  rel="noopener nofollow">#item</a> <a href="./index.html#arma" class="tag"  rel="noopener nofollow">#arma</a> <a href="./index.html#combate" class="tag"  rel="noopener nofollow">#combate</a><br>
+Considere principalmente o <a data-tooltip-position="top" aria-label="Especificações > Alcance" data-href="Especificações#Alcance" href="./Especifica%C3%A7%C3%B5es.html#Alcance" class="internal-link"  rel="noopener nofollow">alcance</a>, <a data-tooltip-position="top" aria-label="Especificações > Dano" data-href="Especificações#Dano" href="./Especifica%C3%A7%C3%B5es.html#Dano" class="internal-link"  rel="noopener nofollow">dano</a>, <a data-tooltip-position="top" aria-label="Especificações > Sacada" data-href="Especificações#Sacada" href="./Especifica%C3%A7%C3%B5es.html#Sacada" class="internal-link"  rel="noopener nofollow">custo de saque</a>, <a data-tooltip-position="top" aria-label="Especificações > Recarga" data-href="Especificações#Recarga" href="./Especifica%C3%A7%C3%B5es.html#Recarga" class="internal-link"  rel="noopener nofollow">custo de recarga</a> e, para armas de fogo, <a data-tooltip-position="top" aria-label="Especificações > Cadencia" data-href="Especificações#Cadencia" href="./Especifica%C3%A7%C3%B5es.html#Cadencia" class="internal-link"  rel="noopener nofollow">cadencia</a>. Algumas armas empregam <a data-tooltip-position="top" aria-label="Munições > Especiais" data-href="Munições#Especiais" href="./Muni%C3%A7%C3%B5es.html#Especiais" class="internal-link"  rel="noopener nofollow">munições especiais</a> ou possuem <a data-tooltip-position="top" aria-label="Características" data-href="Características" href="./Caracter%C3%ADsticas.html" class="internal-link"  rel="noopener nofollow">certas características</a>.</p>
+<h2 id="Armas de fogo" dir="auto">Armas de fogo</h2>
+<h3 id="Pistola" dir="auto">Pistola</h3>
+<p dir="auto">Alcance 1, dano 1, sacada 1, recarga 3, cadencia 4</p>
+<h3 id="Carabina" dir="auto">Carabina</h3>
+<p dir="auto">Alcance 2, dano 2, sacada 2, recarga 2 (por bala), cadencia 3</p>
+<h3 id="Rifle" dir="auto">Rifle</h3>
+<p dir="auto">Alcance 3, dano 3, sacada 2, recarga 3, cadencia 1, <a data-tooltip-position="top" aria-label="Munições > Especiais" data-href="Munições#Especiais" href="./Muni%C3%A7%C3%B5es.html#Especiais" class="internal-link"  rel="noopener nofollow">Munição incendiária</a>, <a data-tooltip-position="top" aria-label="Munições > Especiais" data-href="Munições#Especiais" href="./Muni%C3%A7%C3%B5es.html#Especiais" class="internal-link"  rel="noopener nofollow">Munição rajante</a></p>
+<h3 id="Sniper" dir="auto">Sniper</h3>
+<p dir="auto">Alcance 4, dano 3, sacada 3, recarga X, cadencia 1, <a data-tooltip-position="top" aria-label="Munições > Especiais" data-href="Munições#Especiais" href="./Muni%C3%A7%C3%B5es.html#Especiais" class="internal-link"  rel="noopener nofollow">Munição rajante</a></p>
+<h3 id="Shotgun" dir="auto">Shotgun</h3>
+<p dir="auto">Alcance 2, dano 2, sacada 3, recarga 3, cadencia 2, <a data-tooltip-position="top" aria-label="Munições > Especiais" data-href="Munições#Especiais" href="./Muni%C3%A7%C3%B5es.html#Especiais" class="internal-link"  rel="noopener nofollow">Munição fragmentada</a></p>
+<h3 id="Mosquete" dir="auto">Mosquete</h3>
+<p dir="auto">Alcance 2, dano 1, sacada 3, recarga 4, cadencia 1</p>
+<h3 id="Canhão de mão" dir="auto">Canhão de mão</h3>
+<p dir="auto">Alcance 1, dano 3, sacada 4, recarga 4, cadencia 1, <a data-tooltip-position="top" aria-label="Características > Dano em área" data-href="Características#Dano em área" href="./Caracter%C3%ADsticas.html#Dano%20em%20%C3%A1rea" class="internal-link"  rel="noopener nofollow">Dano em área</a></p>
+<h2 id="Armas brancas [[Características#Silencioso|*]]" dir="auto">Armas brancas <a data-tooltip-position="top" aria-label="Características > Silencioso" data-href="Características#Silencioso" href="./Caracter%C3%ADsticas.html#Silencioso" class="internal-link"  rel="noopener nofollow">*</a></h2>
+<p dir="auto">*<em>Armas brancas somam <a data-tooltip-position="top" aria-label="Atributos > Força" data-href="Atributos#Força" href="./Atributos.html#For%C3%A7a" class="internal-link"  rel="noopener nofollow">força</a> em seus ataques</em></p>
+<h3 id="Faca" dir="auto">Faca</h3>
+<p dir="auto">Alcance 1, dano 1, sacada 1, manejo 1, <a data-tooltip-position="top" aria-label="Características > Lançável" data-href="Características#Lançável" href="./Caracter%C3%ADsticas.html#Lan%C3%A7%C3%A1vel" class="internal-link"  rel="noopener nofollow">Lançável</a></p>
+<h3 id="[[Fuzileiro#Carga de baioneta - 1 pa|Baioneta]]" dir="auto"><a data-tooltip-position="top" aria-label="Fuzileiro > Carga de baioneta - 1 pa" data-href="Fuzileiro#Carga de baioneta - 1 pa" href="./Fuzileiro.html#Carga%20de%20baioneta%20-%201%20pa" class="internal-link"  rel="noopener nofollow">Baioneta</a></h3>
+<p dir="auto">Alcance 3, dano 1, sacada 0, manejo 2</p>
+<h3 id="Sabre" dir="auto">Sabre</h3>
+<p dir="auto">Alcance 2, dano 3, sacada 3, manejo 2</p>
+<h3 id="Lança" dir="auto">Lança</h3>
+<p dir="auto">Alcance 4, dano 2, sacada 3, manejo 3, <a data-tooltip-position="top" aria-label="Características > Lançável" data-href="Características#Lançável" href="./Caracter%C3%ADsticas.html#Lan%C3%A7%C3%A1vel" class="internal-link"  rel="noopener nofollow">Lançável</a></p>
+<h2 id="Armas de arquearia [[Características#Silencioso|*]]" dir="auto">Armas de arquearia <a data-tooltip-position="top" aria-label="Características > Silencioso" data-href="Características#Silencioso" href="./Caracter%C3%ADsticas.html#Silencioso" class="internal-link"  rel="noopener nofollow">*</a></h2>
+<h3 id="Arco" dir="auto">Arco</h3>
+<p dir="auto">Alcance 1, dano 2+<a data-tooltip-position="top" aria-label="Atributos > Força" data-href="Atributos#Força" href="./Atributos.html#For%C3%A7a" class="internal-link"  rel="noopener nofollow">força</a>, sacada 2, recarga 1, cadencia 1</p>
+<h3 id="Besta" dir="auto">Besta</h3>
+<p dir="auto">Alcance 2, dano 3, sacada 3, recarga 3, cadencia 1</p>
+<h2 id="Armas de cerco" dir="auto">Armas de cerco</h2>
+<p dir="auto">Armas de cerco são instrumentos poderosos contra tropas e fortificações. Com alcance grande e dano imenso, também são notórias pelo seu manuseio complicado.<br>
+Caso possível, a arma pode ser manuseada por mais integrantes, assim dividindo os custos.</p>
+<h3 id="Metralhadora" dir="auto">Metralhadora</h3>
+<p dir="auto">Alcance 2, dano 2, sacada 9, recarga 9, cadencia 2<br>
+<em>Rola 1d100: Para cada 20 de dano, um inimigo é morto</em></p>
+<p dir="auto"><br>
+</p>
+<h3 id="Canhão" dir="auto">Canhão</h3>
+<p dir="auto">Alcance 4, dano 5, sacada 12, recarga 15, cadencia 1, <a data-tooltip-position="top" aria-label="Características > Dano em área" data-href="Características#Dano em área" href="./Caracter%C3%ADsticas.html#Dano%20em%20%C3%A1rea" class="internal-link"  rel="noopener nofollow">Dano em área</a>, <a data-tooltip-position="top" aria-label="Características > Tiro Direto" data-href="Características#Tiro Direto" href="./Caracter%C3%ADsticas.html#Tiro%20Direto" class="internal-link"  rel="noopener nofollow">Direto</a>, <a data-tooltip-position="top" aria-label="Características > Efeito moral" data-href="Características#Efeito moral" href="./Caracter%C3%ADsticas.html#Efeito%20moral" class="internal-link"  rel="noopener nofollow">Efeito Moral</a> x2</p>
+<h3 id="Morteiro" dir="auto">Morteiro</h3>
+<p dir="auto">Alcance 3, dano 3, sacada 12, recarga 12, <a data-tooltip-position="top" aria-label="Características > Dano em área" data-href="Características#Dano em área" href="./Caracter%C3%ADsticas.html#Dano%20em%20%C3%A1rea" class="internal-link"  rel="noopener nofollow">Dano em área</a> x2, <a data-tooltip-position="top" aria-label="Características > Tiro Indireto" data-href="Características#Tiro Indireto" href="./Caracter%C3%ADsticas.html#Tiro%20Indireto" class="internal-link"  rel="noopener nofollow">Indireto</a>, <a data-tooltip-position="top" aria-label="Características > Efeito moral" data-href="Características#Efeito moral" href="./Caracter%C3%ADsticas.html#Efeito%20moral" class="internal-link"  rel="noopener nofollow">Efeito Moral</a></p>
+<h2 id="Armas extras" dir="auto">Armas extras</h2>
+<h3 id="Granada" dir="auto">Granada</h3>
+<p dir="auto">Dano 2, sacada 3, <a data-tooltip-position="top" aria-label="Características > Lançável" data-href="Características#Lançável" href="./Caracter%C3%ADsticas.html#Lan%C3%A7%C3%A1vel" class="internal-link"  rel="noopener nofollow">Lançável</a>, <a data-tooltip-position="top" aria-label="Características > Dano em área" data-href="Características#Dano em área" href="./Caracter%C3%ADsticas.html#Dano%20em%20%C3%A1rea" class="internal-link"  rel="noopener nofollow">Dano em área</a>, <a data-tooltip-position="top" aria-label="Características > Tiro Indireto" data-href="Características#Tiro Indireto" href="./Caracter%C3%ADsticas.html#Tiro%20Indireto" class="internal-link"  rel="noopener nofollow">Indireto</a>, Uso único</p>
+<h3 id="Fogo de artificio" dir="auto">Fogo de artificio</h3>
+<p dir="auto">Alcance 3, dano 2, sacada 2, <a data-tooltip-position="top" aria-label="Características > Dano em área" data-href="Características#Dano em área" href="./Caracter%C3%ADsticas.html#Dano%20em%20%C3%A1rea" class="internal-link"  rel="noopener nofollow">Dano em área</a>, <a data-tooltip-position="top" aria-label="Características > Efeito moral" data-href="Características#Efeito moral" href="./Caracter%C3%ADsticas.html#Efeito%20moral" class="internal-link"  rel="noopener nofollow">Efeito Moral</a> x2, <a data-tooltip-position="top" aria-label="Características > Incendiário" data-href="Características#Incendiário" href="./Caracter%C3%ADsticas.html#Incendi%C3%A1rio" class="internal-link"  rel="noopener nofollow">Incendiário</a>, Uso único</p>
+<h3 id="Dinamite" dir="auto">Dinamite</h3>
+<p dir="auto">Dano 4, <a data-tooltip-position="top" aria-label="Características > Dano em área" data-href="Características#Dano em área" href="./Caracter%C3%ADsticas.html#Dano%20em%20%C3%A1rea" class="internal-link"  rel="noopener nofollow">Dano em área</a> x2, <a data-tooltip-position="top" aria-label="Características > Controlável" data-href="Características#Controlável" href="./Caracter%C3%ADsticas.html#Control%C3%A1vel" class="internal-link"  rel="noopener nofollow">Controlável</a>, Uso único</p>
+    </body>
+</html>

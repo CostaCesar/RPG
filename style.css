@@ -1,0 +1,64 @@
+*
+{
+    font-family: 'Georgia'
+}
+
+body{
+    background-image: url(background.jpg);
+    background-size: cover;
+}
+body > h1{
+    margin: 100px 0px;
+    width: 100%;
+    text-align: center;
+    font-size: 64px;
+}
+
+div.book
+{
+    background-image: url(book.jpg);
+    background-size: cover;
+
+    margin: 0 25px 100px 25px;
+
+    display: flex;
+    min-width: 200px;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    min-height: 450px;
+
+    border: 5px black ridge;
+}
+.book > h2
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 32px;
+
+    color: goldenrod;
+    border-bottom: 5px black dotted;
+}
+.book > h3
+{
+    margin: 16px 0;
+    font-size: 20px;
+}
+.book > h3:hover
+{
+    text-shadow: 0px 0px 5px white;
+}
+.book a
+{
+    color:antiquewhite;
+    text-decoration: none;
+}
+
+div.content
+{
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    left: 5vw;
+    max-width: 90vw;
+    flex-wrap: wrap;
+}
